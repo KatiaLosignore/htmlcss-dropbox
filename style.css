@@ -41,7 +41,7 @@ h1 {
 
 .container-center {
     max-width: 1000px;
-    margin: 140px auto;
+    margin: 0 auto;
 }
  
 
@@ -110,7 +110,7 @@ h1 {
 /* Jumbotron */
 
 #jumbotron {
-    min-height: 750px;
+    min-height: 670px;
     background-color: rgb(180,208,231);
 }
     
@@ -131,6 +131,7 @@ h1 {
 .col-70 {
     flex-basis: 70%;
 }
+
 
 /* utils */
 
@@ -167,7 +168,7 @@ h1 {
 /* Business     */
 
 #business {
-    padding: 50px;
+    padding: 190px;
 }
 
 .col {
@@ -200,6 +201,8 @@ h3 {
 
 .title {
     text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid grey;
 }
     
 .col-left, .col-center, .col-right {
@@ -238,16 +241,15 @@ h4 {
 .enterprise {
     justify-content: space-between;
     align-items: center;
-}
-
-.left {
-    flex-basis: 60%;
-}
-
-.right {
-    flex-basis: 30%;
-}
     
+    padding: 20px;
+    border: 1px solid grey;
+}
+
+.team {
+    border: 1px solid grey;
+}
+   
     
 
 
