@@ -85,11 +85,17 @@ h1 {
 .btn {
     display: inline-block;
     text-decoration: none;
+}
+    
+
+.btn-blue {
     border-color: transparent;
     color:white;
     background-color: rgb(0,97,255);
 }
-    
+
+
+   
     
 .btn-small {
     padding: 5px 10px;
@@ -104,7 +110,7 @@ h1 {
 }
 
 .btn-large {
-    padding: 10px 35px;
+    padding: 10px 24px;
 }
 
 /* Jumbotron */
@@ -124,16 +130,24 @@ h1 {
    /* flex-wrap: wrap; */
 }
 
+/* Utils */
+
 .col-30 {
     flex-basis: 30%;
+}
+
+.col-40 {
+    flex-basis: 40%;
+}
+
+.col-60 {
+    flex-basis: 60%;
 }
 
 .col-70 {
     flex-basis: 70%;
 }
 
-
-/* utils */
 
 .mb-20 {
     margin-bottom: 20px;
@@ -163,7 +177,9 @@ h1 {
     margin-top: 57px;
 }
 
-
+.mt-180 {
+    margin-top: 180px;
+}
 
 /* Business     */
 
@@ -173,7 +189,12 @@ h1 {
 
 .col {
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+.col-n {
+    gap: 40px;
+    margin-top: 15px;
 }
 
 h3 {
@@ -202,11 +223,16 @@ h3 {
 .title {
     text-align: center;
     padding: 10px;
-    border-bottom: 1px solid grey;
 }
     
+
+.border {
+    border-bottom: 1px solid grey;
+}
+   
+    
 .col-left, .col-center, .col-right {
-    flex: 0 0 33%;
+    flex: 30%;
     border: 1px solid grey;
 }
     
@@ -223,14 +249,14 @@ hr {
 }
 
 h4 {
-    font-size: 30px;
-    margin: 20px 0;
+    font-size: 20px;
+    margin: 5px 0;
 }
 
 .fa-check {
     color: rgb(0,97,255);
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 10px 0;
 }
 
 .text-blue {
@@ -240,21 +266,39 @@ h4 {
     
 .enterprise {
     justify-content: space-between;
-    align-items: center;
+   
     
     padding: 20px;
     border: 1px solid grey;
 }
 
 .team {
-    border: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-top: 1px solid grey;
 }
-   
-    
 
+.position {
+    margin-top: 9px;
+}
 
-   
+/* Dropbox */
 
+button {
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Dropbox business */
+
+#dropbox-business {
+    padding: 70px;
+}
+
+.left, .center, .right {
+    flex: 30%;
+}
 
 
 
