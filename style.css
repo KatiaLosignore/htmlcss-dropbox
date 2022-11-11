@@ -484,12 +484,28 @@ h6 {
     border-bottom: 1px solid grey;
 }
 
+.space {
+    justify-content: space-between;
+}
+
 .lorem {
     display: none;
 }
 
-.row .col-10 .fa-chevron-down p:hover {
+.fa-chevron-up {
+    display:none;
+}
+
+.row.space:hover .lorem {
     display: block;
+}
+
+.row.space:hover .fa-chevron-up  {
+    display: block;
+}
+
+.row.space:hover .fa-chevron-down  {
+    display: none;
 }
 
 /* footer */
