@@ -44,6 +44,10 @@ h1 {
     margin: 0 auto;
 }
  
+main {
+    overflow-y: auto;
+}
+   
 
 /* header */
 
@@ -72,7 +76,7 @@ h1 {
 
 #main-header a {
     display: inline-block;
-    padding: 0 20px;
+    padding: 5px 20px;
     font-size: 15px;
 }
     
@@ -80,11 +84,16 @@ h1 {
     width: 120px;
 }
 
+#main-header a:hover {
+    text-decoration: underline;
+}
+
 /* Buttons */
 
-.btn {
+.btn, .btn1 {
     display: inline-block;
     text-decoration: none;
+    transition: color 1s;
 }
     
 
@@ -94,7 +103,10 @@ h1 {
     background-color: rgb(0,97,255);
 }
 
-
+.btn-white {
+    background-color: white;
+    color:black;
+}
    
     
 .btn-small {
@@ -113,6 +125,24 @@ h1 {
     padding: 10px 24px;
 }
 
+.btn-large-plus {
+    padding: 10px 40px;
+}
+
+.btn:hover {
+    background-color: rgba(0,97,255,0.6);
+}
+
+button:hover {
+    color:grey;
+}
+
+.col-30 .btn1:hover {
+   color: lightgray;
+}
+
+
+
 /* Jumbotron */
 
 #jumbotron {
@@ -127,10 +157,19 @@ h1 {
 
 .row {
    display: flex;
-   /* flex-wrap: wrap; */
 }
+   
 
 /* Utils */
+
+.col-10 {
+    flex-basis: 10%;
+}
+
+
+.col-20 {
+    flex-basis: 20%;
+}
 
 .col-30 {
     flex-basis: 30%;
@@ -140,12 +179,24 @@ h1 {
     flex-basis: 40%;
 }
 
+.col-50 {
+    flex-basis: 50%;
+}
+
 .col-60 {
     flex-basis: 60%;
 }
 
 .col-70 {
     flex-basis: 70%;
+}
+
+.col-90 {
+    flex-basis: 90%;
+}
+
+.flex {
+    gap: 230px;
 }
 
 
@@ -208,6 +259,7 @@ h3 {
     border-radius: 50%;
     background-color: white;
     margin-right: 5px;
+    margin-bottom: 26px;
 }
 
 .blue {
@@ -231,6 +283,7 @@ h3 {
 }
    
     
+    
 .col-left, .col-center, .col-right {
     flex: 30%;
     border: 1px solid grey;
@@ -243,21 +296,29 @@ h3 {
 }
 
 hr {
-    margin: 50px 0;
+    margin-top: 45px;  
+    margin-bottom: 60px;
     width: 53px;
     border-color: lightgrey;
 }
+
+.hr3 {
+    width: 160px;
+    margin-top: 50px;
+}
+
 
 h4 {
     font-size: 20px;
     margin: 5px 0;
 }
 
+
 .fa-check {
     color: rgb(0,97,255);
     font-weight: 800;
-    margin-top: 10px 0;
 }
+    
 
 .text-blue {
     text-decoration: underline;
@@ -282,6 +343,19 @@ h4 {
     margin-top: 9px;
 }
 
+.mg {
+    margin-left: 24px;
+}
+
+.mga {
+    margin-left: 10px;
+}
+
+.ml{
+    margin-left: 4px;
+}
+
+
 /* Dropbox */
 
 button {
@@ -293,21 +367,169 @@ button {
 /* Dropbox business */
 
 #dropbox-business {
-    padding: 70px;
+    padding: 120px;
 }
 
 .left, .center, .right {
     flex: 30%;
 }
 
+/* logo */
+
+
+.squares-container {
+    display: flex;
+}
+
+.square {
+    width: calc(100vw /3);
+    height: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-square {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid transparent;
+    transition: border-color 1s;
+}
+    
+.small-square img {
+    width: 50%;
+    filter: invert(1);
+}
+
+.designit {
+    background-color: rgb(162,211,155);
+}
+
+.asu {
+    background-color: rgb(97,8,43);
+}
+
+.florida {
+    background-color: rgb(0,147,206);
+}
+
+.topps {
+    background-color: rgb(255,28,28);
+}
+
+.designit-center {
+    padding: 30px;
+    background-color: rgb(245,245,245);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.designit-center img {
+    margin-top: 28px;
+}
+
+.world {
+    background-color: rgb(213,0,31);
+}
+
+.hearst {
+    background-color: rgb(180,208,231);
+}
+
+.lonely {
+    background-color: rgb(13,36,129);
+}
+
+.channel {
+    background-color: rgb(255,216,48);
+}
+
+
+.designit:hover, .asu:hover, .florida:hover, .topps:hover, .world:hover, .hearst:hover, .lonely:hover, .channel:hover {
+    border: 10px solid rgba(255,255,255,0.5);
+}
+
+
+/* #free-trial */
+
+#free-trial {
+    padding: 110px;
+    background-color: rgb(180,208,231);
+}
+    
+
+.purple {
+    color: rgb(100,8,43);
+}
+
+/* Requests */
+
+#requests {
+    padding: 100px;
+}
+
+.fa-chevron-down {
+    margin: 50px 0;
+}
+
+h6 {
+    font-size: 16px;
+    margin: 40px 0;
+}
+
+.border-top {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.lorem {
+    display: none;
+}
+
+.row .col-10 .fa-chevron-down p:hover {
+    display: block;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    padding: 70px;
+}
+   
+h5 {
+ font-size: 16px;
+ margin-bottom: 16px;
+ color: white;
+}
+
+.col-20 a {
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.hr2 {
+    width: 85px;
+    margin-top: 85px;
+    margin-bottom: 30px;
+    border-color:  grey;
+}
+
+.fa-earth-americas, .fa-sort-up, .italian {
+    color: grey;
+    font-size: 12px;
+}
+
+.fa-earth-americas {
+    margin-right: 5px;
+}
 
 
 
-
-
-
-
-
-
-
+    
+    
 
